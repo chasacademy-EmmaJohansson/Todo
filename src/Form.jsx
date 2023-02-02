@@ -13,7 +13,7 @@ function Form({ setInputText, todos, setTodos, inputText }) {
   return (
     <form>
       <input
-        className=" border-amber-300 p-1 border-4 rounded-lg mr-3"
+        className="p-2 border-amber-300 md:p-1 border-4 rounded-lg mr-3"
         value={inputText}
         onChange={inputTextHandler}
         type="text"

@@ -24,8 +24,8 @@ const Todo = ({ text, todo, todos, setTodos }) => {
         <li
           className={`${
             todo.completed
-              ? " line-through font-bold text-md text-amber-800 ml-3 "
-              : "font-bold text-md text-amber-800 ml-3"
+              ? " line-through text-lg font-bold md:text-md text-amber-800 ml-3 "
+              : "text-lg font-bold md:text-md text-amber-800 ml-3"
           }`}
         >
           {text}
@@ -34,13 +34,13 @@ const Todo = ({ text, todo, todos, setTodos }) => {
 
       <div className="flex gap-2">
         <button
-          className="border-amber-400 border-1 border-double font-medium text-sm pr-1 pl-1 bg-orange-300 rounded-lg text-orange-700 hover:bg-orange-400"
+          className="text-lg border-amber-400 border-1 border-double font-medium md:text-sm pr-1 pl-1 bg-orange-300 rounded-lg text-orange-700 hover:bg-orange-400"
           onClick={completeHandler}
         >
           Done
         </button>
         <button
-          className="border-amber-400 border-4 border-double font-medium text-sm pr-1 pl-1 bg-orange-300 rounded-lg text-orange-700 hover:bg-orange-400"
+          className="text-lg border-amber-400 border-4 border-double font-medium md:text-sm pr-1 pl-1 bg-orange-300 rounded-lg text-orange-700 hover:bg-orange-400"
           onClick={deleteHandler}
         >
           Delete
